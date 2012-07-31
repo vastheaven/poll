@@ -1,1 +1,22 @@
-This is simple poll system developed by PHP.
+This is a simple poll system developed for Cardiff University Gravity Group. It is  
+developed based on opensource code from http://www.codeproject.com/Articles/16736/A- 
+Simple-PHP-Polling-Voting-System
+
+Features:
+1. Integrate with shibboleth login
+2. Authenticated users can generate and vote for polls
+3. Voting eligibility control
+4. A user is only allowed to vote once
+5. Archiving polls
+6. Data is stored by xml files.
+
+Install:
+1. Put the code under apache document root, e.g. /var/www/html/poll
+2. Protect the poll/ folder with shibboleth credentials.
+
+Note:
+This code is specifically developed for our own (LIGO) use cases. For example, we  
+hardcoded "cn", "isMemberof" attributes for user authentication and authorization. Future version  will provide config file for easier configuration for different use cases.
+
+
+ 
